@@ -1,7 +1,7 @@
 # Notes
 Link: https://www.learningcrux.com/course/the-complete-react-js-redux-course-build-modern-web-apps
 
-## Let vs. Var
+## Let - Var - Const 
 - Let 
   - can reassign value
   - doesn't leak outside of block scope like {}
@@ -13,4 +13,25 @@ Link: https://www.learningcrux.com/course/the-complete-react-js-redux-course-bui
   - doesn't leak outside of block scope {}
   - Exception : const object's property can be changed but no the object itself
   
+## Arrow Function
+```javascript
+const integers = [1, 2, 3];
+const updatedIntegers = integers.map( () => "neooo"); // ['neooo','neoooo','neoooo']
+```
+
+## Protoype Methods
+```javascript
+function Person(name, age){
+  this.name = name;
+  this.age = age;
+}
+
+Person.prototype.speak = function(){
+ console.log("My name is ${this.name} and my age is ${this.age}") //This will whatever the name and age belong to this method
+}
+
+const Neo = new Person("Neo", 20);
+
+Neo.speak(); // My name is Neo and my age is 20
+```
 
