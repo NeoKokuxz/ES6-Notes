@@ -19,7 +19,7 @@ const integers = [1, 2, 3];
 const updatedIntegers = integers.map( () => "neooo"); // ['neooo','neoooo','neoooo']
 ```
 
-## Protoype Methods
+## Protoype Methods (ES5)
 ```javascript
 function Person(name, age){
   this.name = name;
