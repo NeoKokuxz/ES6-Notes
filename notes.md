@@ -34,4 +34,3 @@ const Neo = new Person("Neo", 20);
 
 Neo.speak(); // My name is Neo and my age is 20
 ```
-
